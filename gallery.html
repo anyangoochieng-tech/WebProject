@@ -26,19 +26,85 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navMenu">
+            <a class="navbar-brand" href="index.html">The Fitness Hub</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
 
             <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
-                <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
-                <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
-                <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+    </li>
 
-            </ul>
+    <!-- Dropdown Menu -->
+    <li class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            Pages
+        </a>
+
+        <ul class="dropdown-menu">
+
+            <li>
+                <a class="dropdown-item" href="AboutUs.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="membership.html">
+                    Membership
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="classes.html">
+                    Classes
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="trainers.html">
+                    Trainers
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="gallery.html">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="faq.html">
+                    FAQ
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </li>
+
+</ul>
+
+            
 
             <button class="btn btn-outline-light ms-3" onclick="toggleTheme()">
                 Dark Mode
@@ -159,15 +225,16 @@
 
         <div class="col-md-3"><img src="images/HIITtrainer.jpg" class="img-fluid rounded" alt=""></div>
         <div class="col-md-3"><img src="images/trainer.jpg" class="img-fluid rounded" alt=""></div>
-        <div class="col-md-3"><img src="images/group.jpg" class="img-fluid rounded" alt=""></div>
-        <div class="col-md-3"><img src="images/weights.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-md-3"><img src="images/gymgroup.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-md-3"><img src="images/gymweights.jpg" class="img-fluid rounded" alt=""></div>
 
     </div>
 
 </section>
 
-<!-- ================= CTA ================= -->
-<section class="container text-center my-5">
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="bg-dark text-white text-center p-5">
 
     <h2>Join Our Fitness Community</h2>
 
@@ -175,10 +242,11 @@
         Train with professionals, stay motivated, and transform your lifestyle at The Fitness Hub.
     </p>
 
-    <a href="membership.html" class="btn btn-success btn-lg">Become a Member</a>
+    <a href="membership.html" class="btn btn-success btn-lg">
+        Become a Member
+    </a>
 
 </section>
-
 <!-- ================= FOOTER ================= -->
 <footer class="bg-light text-center p-3 mt-5">
     <p>© 2026 The Fitness Hub | Nairobi, Kenya</p>
