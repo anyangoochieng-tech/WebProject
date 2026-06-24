@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - The Fitness Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">The Fitness Hub</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- Dark Mode Button -->
+            <button class="btn btn-outline-light ms-3"
+                    onclick="toggleTheme()">
+                Dark Mode
+            </button>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="container text-center my-5">
+
+    <h1 class="display-4">Frequently Asked Questions</h1>
+
+    <p class="lead">
+        Find answers to common questions about memberships, classes, trainers, and facilities at The Fitness Hub.
+    </p>
+
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="container my-5">
+
+    <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                    Do I need prior gym experience to join?
+                </button>
+            </h2>
+
+            <div id="faq1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    No. We welcome beginners, intermediate members, and experienced athletes.
+                    Our trainers can help you create a fitness plan suited to your goals.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                    What membership plans are available?
+                </button>
+            </h2>
+
+            <div id="faq2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    We offer Basic, Premium, and VIP membership plans. Visit our
+                    <a href="membership.html">Membership Page</a>
+                    to compare features and pricing.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                    Are group fitness classes included?
+                </button>
+            </h2>
+
+            <div id="faq3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Group classes are included in Premium and VIP memberships.
+                    Classes include yoga, HIIT, strength training, and more.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+                    Can I work with a personal trainer?
+                </button>
+            </h2>
+
+            <div id="faq4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Yes. Our certified trainers provide personalized fitness programs,
+                    coaching, and progress tracking to help you achieve your goals.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq5">
+                    What are your operating hours?
+                </button>
+            </h2>
+
+            <div id="faq5" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    We are open Monday to Friday from 5:30 AM to 10:00 PM and
+                    weekends from 7:00 AM to 8:00 PM.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ADDITIONAL INFORMATION ================= -->
+<section class="container my-5">
+
+    <h2 class="mb-4">Need More Information?</h2>
+
+    <p>
+        Explore our
+        <a href="classes.html">Fitness Classes</a>
+        to learn about training programs available throughout the week.
+    </p>
+
+    <p>
+        Meet our experienced
+        <a href="trainers.html">Personal Trainers</a>
+        and discover how they can help you reach your goals.
+    </p>
+
+    <p>
+        Browse our
+        <a href="gallery.html">Gallery</a>
+        to see our facilities, equipment, and member activities.
+    </p>
+
+    <p>
+        If you still have questions, visit our
+        <a href="contact.html">Contact Page</a>
+        and our team will be happy to assist you.
+    </p>
+
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="bg-dark text-white text-center p-5">
+
+    <h2>Still Have Questions?</h2>
+
+    <p>
+        Contact our team today and we will help you choose the right fitness plan for your goals.
+    </p>
+
+    <a href="contact.html" class="btn btn-success btn-lg">
+        Contact Us
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-light text-center p-3">
+
+    <p>© 2026 The Fitness Hub | Nairobi, Kenya</p>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
