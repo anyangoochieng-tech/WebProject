@@ -1,156 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Fitness Hub</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Your CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <!-- ================= NAVBAR ================= -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
     <div class="container">
-        <a class="navbar-brand" href="index.html">The Fitness Hub</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-       <div class="collapse navbar-collapse" id="navMenu">
-    <ul class="navbar-nav ms-auto">
-
-    <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-    </li>
-
-    <!-- Dropdown Menu -->
-    <li class="nav-item dropdown">
-
-        <a class="nav-link dropdown-toggle"
-           href="#"
-           role="button"
-           data-bs-toggle="dropdown"
-           aria-expanded="false">
-            Pages
+        <a class="navbar-brand" href="index.html">
+            The Fitness Hub
         </a>
 
-        <ul class="dropdown-menu">
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
 
-            <li>
-                <a class="dropdown-item" href="AboutUs.html">
-                    About Us
-                </a>
-            </li>
+            <span class="navbar-toggler-icon"></span>
 
-            <li>
-                <a class="dropdown-item" href="membership.html">
-                    Membership
-                </a>
-            </li>
+        </button>
 
-            <li>
-                <a class="dropdown-item" href="classes.html">
-                    Classes
-                </a>
-            </li>
+        <div class="collapse navbar-collapse" id="navMenu">
 
-            <li>
-                <a class="dropdown-item" href="trainers.html">
-                    Trainers
-                </a>
-            </li>
+            <ul class="navbar-nav ms-auto">
 
-            <li>
-                <a class="dropdown-item" href="gallery.html">
-                    Gallery
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
 
-            <li>
-                <a class="dropdown-item" href="faq.html">
-                    FAQ
-                </a>
-            </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
 
-            <li>
-                <a class="dropdown-item" href="contact.html">
-                    Contact
-                </a>
-            </li>
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
-        </ul>
+                        Pages
 
-    </li>
+                    </a>
 
-</ul>
-</div>
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a class="dropdown-item" href="AboutUs.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="membership.html">
+                                Membership
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="classes.html">
+                                Classes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="trainers.html">
+                                Trainers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <!-- Dark Mode Button -->
+            <button class="btn btn-outline-light ms-3"
+                    onclick="toggleTheme()">
+
+                 Dark Mode
+
+            </button>
+
+        </div>
+
+    </div>
+
 </nav>
 
-<div id="fitnessHubCarousel" class="carousel slide" data-bs-ride="carousel"> 
-    <!-- Indicators --> 
-     <div class="carousel-indicators"> 
-        <button type="button" data-bs-target="#fitnessHubCarousel" data-bs-slide-to="0" class="active"></button> 
-        <button type="button" data-bs-target="#fitnessHubCarousel" data-bs-slide-to="1"></button> 
-        <button type="button" data-bs-target="#fitnessHubCarousel" data-bs-slide-to="2"></button>
-     </div> 
-     <!-- Carousel Images -->
-<div class="carousel-inner rounded">
+<!-- ================= IMAGE CAROUSEL ================= -->
 
-    <div class="carousel-item active">
-        <img src="images/gym1.jpg"
-             class="d-block mx-auto"
-             style="width:65%;"
-             alt="Modern Gym Equipment">
+<div id="fitnessHubCarousel"
+     class="carousel slide my-4"
+     data-bs-ride="carousel">
 
-        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-            <h3>Modern Equipment</h3>
-            <p>Train using high-quality fitness machines and free weights.</p>
-        </div>
+    <!-- Indicators -->
+
+    <div class="carousel-indicators">
+
+        <button type="button"
+                data-bs-target="#fitnessHubCarousel"
+                data-bs-slide-to="0"
+                class="active"></button>
+
+        <button type="button"
+                data-bs-target="#fitnessHubCarousel"
+                data-bs-slide-to="1"></button>
+
+        <button type="button"
+                data-bs-target="#fitnessHubCarousel"
+                data-bs-slide-to="2"></button>
+
     </div>
 
-    <div class="carousel-item">
-        <img src="images/gym2.jpg"
-             class="d-block mx-auto"
-             style="width:65%;"
-             alt="Personal Training">
+    <!-- Images -->
 
-        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-            <h3>Expert Trainers</h3>
-            <p>Receive personalized coaching from certified fitness professionals.</p>
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+            <img src="images/gym1.jpg"
+                 class="d-block mx-auto img-fluid"
+                 style="width:65%;"
+                 alt="Members using modern gym equipment">
+
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+
+                <h3>Modern Equipment</h3>
+
+                <p>
+                    Train with high-quality strength and cardio equipment.
+                </p>
+
+            </div>
+
         </div>
+
+        <div class="carousel-item">
+
+            <img src="images/gym2.jpg"
+                 class="d-block mx-auto img-fluid"
+                 style="width:65%;"
+                 alt="Personal trainer assisting a member">
+
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+
+                <h3>Expert Trainers</h3>
+
+                <p>
+                    Receive professional coaching tailored to your goals.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="carousel-item">
+
+            <img src="images/gym3.jpg"
+                 class="d-block mx-auto img-fluid"
+                 style="width:65%;"
+                 alt="Members participating in a group fitness class">
+
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+
+                <h3>Group Fitness Classes</h3>
+
+                <p>
+                    Stay motivated with fun and energetic group workouts.
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="carousel-item">
-        <img src="images/gym3.jpg"
-             class="d-block mx-auto"
-             style="width:65%;"
-             alt="Group Classes">
+    <!-- Controls -->
 
-        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-            <h3>Group Fitness Classes</h3>
-            <p>Join exciting cardio, strength, and wellness sessions.</p>
-        </div>
-    </div>
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#fitnessHubCarousel"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+        <span class="visually-hidden">
+            Previous
+        </span>
+
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#fitnessHubCarousel"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+        <span class="visually-hidden">
+            Next
+        </span>
+
+    </button>
 
 </div>
-            <!-- Controls -->
-<button class="carousel-control-prev" type="button" data-bs-target="#fitnessHubCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Previous</span>
-</button>
+    <!-- ================= WELCOME ================= -->
+<section class="container text-center my-5">
 
-<button class="carousel-control-next" type="button" data-bs-target="#fitnessHubCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Next</span>
-</button>
-    </div>
     <h1 class="display-4">Welcome to The Fitness Hub</h1>
 
     <p class="lead">
@@ -168,27 +257,51 @@
 
     <h2 class="text-center mb-4">Why Choose Us</h2>
 
-    <div class="row text-center">
+    <div class="row text-center g-4">
 
         <div class="col-md-4">
-            <div class="card p-3">
+
+            <div class="card p-4 h-100 shadow">
+
                 <h5>Modern Equipment</h5>
-                <p>Train using high-quality, modern fitness machines.</p>
+
+                <p>
+                    Train using high-quality, modern fitness machines designed for
+                    strength training, cardio workouts, and overall fitness improvement.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-4">
-            <div class="card p-3">
+
+            <div class="card p-4 h-100 shadow">
+
                 <h5>Expert Trainers</h5>
-                <p>Get guidance from certified fitness professionals.</p>
+
+                <p>
+                    Get guidance from certified fitness professionals who are committed
+                    to helping you achieve your personal fitness goals safely.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-4">
-            <div class="card p-3">
+
+            <div class="card p-4 h-100 shadow">
+
                 <h5>Friendly Environment</h5>
-                <p>A motivating space to help you stay consistent.</p>
+
+                <p>
+                    Enjoy a clean, motivating, and welcoming atmosphere where members
+                    of all fitness levels feel encouraged to succeed.
+                </p>
+
             </div>
+
         </div>
 
     </div>
@@ -200,35 +313,70 @@
 
     <h2 class="text-center mb-4">Membership Plans</h2>
 
-    <div class="row text-center">
+    <div class="row text-center g-4">
 
         <div class="col-md-4">
-            <div class="card p-3">
+
+            <div class="card p-4 h-100 shadow">
+
                 <h5>Basic</h5>
-                <p>KES 2,500 / month</p>
+
+                <p class="fw-bold text-primary">
+                    KES 3,000 / month
+                </p>
+
+                <p>
+                    Perfect for beginners looking for affordable gym access.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-4">
-            <div class="card p-3">
+
+            <div class="card p-4 h-100 shadow">
+
                 <h5>Premium</h5>
-                <p>KES 4,500 / month</p>
+
+                <p class="fw-bold text-success">
+                    KES 5,000 / month
+                </p>
+
+                <p>
+                    Includes unlimited gym access and selected group fitness classes.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-4">
-            <div class="card p-3">
+
+            <div class="card p-4 h-100 shadow">
+
                 <h5>VIP</h5>
-                <p>KES 7,000 / month</p>
+
+                <p class="fw-bold text-danger">
+                    KES 8,500 / month
+                </p>
+
+                <p>
+                    Our complete package with personal training and nutrition guidance.
+                </p>
+
             </div>
+
         </div>
 
     </div>
 
-    <div class="text-center mt-3">
+    <div class="text-center mt-4">
+
         <a href="membership.html" class="btn btn-outline-primary">
             View Full Plans
         </a>
+
     </div>
 
 </section>
@@ -240,21 +388,24 @@
 
     <p>
         We help members achieve their fitness goals through professional training,
-        modern equipment, and personalized programs.
+        modern equipment, personalized workout programs, and a supportive fitness community.
     </p>
 
-    <a href="about.html" class="btn btn-secondary">
+    <a href="AboutUs.html" class="btn btn-secondary">
         Read More
     </a>
 
 </section>
 
 <!-- ================= CALL TO ACTION ================= -->
-<section class="bg-dark text-white text-center p-5">
+<section class="bg-dark text-white text-center cta-section">
 
     <h2>Ready to Start Your Fitness Journey?</h2>
 
-    <p>Join The Fitness Hub today and transform your life.</p>
+    <p>
+        Join The Fitness Hub today and begin your journey towards a healthier,
+        stronger, and more confident version of yourself.
+    </p>
 
     <a href="contact.html" class="btn btn-success btn-lg">
         Join Now
@@ -272,7 +423,7 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Your JS -->
+<!-- Custom JavaScript -->
 <script src="js/script.js"></script>
 
 </body>
