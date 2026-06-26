@@ -207,3 +207,54 @@ body.dark-mode .form-control:focus {
         transform: translateY(0);
     }
 }
+
+/* ================= GALLERY IMAGES ================= */
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ================= FAQ PAGE ================= */
+
+/* Accordion card */
+.accordion-item{
+    background-color:#f5e6d3;
+    border:none;
+    border-radius:12px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+
+/* Question button */
+.accordion-button{
+    background-color:#f5e6d3;
+    color:#800000;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* Question when opened */
+.accordion-button:not(.collapsed){
+    background-color:#e8d3b5;
+    color:#800000;
+}
+
+/* Remove Bootstrap blue glow */
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+/* Answer area */
+.accordion-body{
+    background-color:#f5e6d3;
+    color:#222;
+}
