@@ -1,15 +1,12 @@
-
-alert("script.js loaded");
 /* ==========================================
    THE FITNESS HUB - script.js
-   ========================================== */
+========================================== */
 
 /* ========= DARK MODE ========= */
 
 function toggleTheme() {
-    alert("Button clicked!");
+
     document.body.classList.toggle("dark-mode");
-}
 
     // Save user's preference
     if (document.body.classList.contains("dark-mode")) {
@@ -17,7 +14,6 @@ function toggleTheme() {
     } else {
         localStorage.setItem("theme", "light");
     }
-
 }
 
 // Apply saved theme when page loads
@@ -29,14 +25,12 @@ window.addEventListener("load", function () {
 
 });
 
-
 /* ========= CONTACT FORM VALIDATION ========= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("contactForm");
 
-    // If the page has no contact form, stop here
     if (!form) return;
 
     form.addEventListener("submit", function (event) {
@@ -49,13 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const subject = document.getElementById("subject").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        // Check for empty fields
         if (name === "" || email === "" || phone === "" || subject === "" || message === "") {
             alert("Please complete all the fields before submitting.");
             return;
         }
 
-        // Email validation
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
 
         if (!emailPattern.test(email)) {
@@ -63,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Phone number validation
         const phonePattern = /^[0-9]{10,13}$/;
 
         if (!phonePattern.test(phone)) {
@@ -71,17 +62,22 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Success message
-        alert("Thank you for contacting The Fitness Hub! Your message has been received.");
+       // Show success message
+document.getElementById("successMessage").style.display = "block";
 
-        form.reset();
+// Reset the form
+form.reset();
+
+// Hide the message after 5 seconds
+setTimeout(function () {
+    document.getElementById("successMessage").style.display = "none";
+}, 5000);
 
     });
 
 });
 
-
-/* ========= BACK TO TOP BUTTON (OPTIONAL) ========= */
+/* ========= BACK TO TOP BUTTON ========= */
 
 window.onscroll = function () {
 
@@ -89,7 +85,7 @@ window.onscroll = function () {
 
     if (!button) return;
 
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.documentElement.scrollTop > 300) {
         button.style.display = "block";
     } else {
         button.style.display = "none";

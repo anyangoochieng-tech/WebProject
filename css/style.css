@@ -186,3 +186,24 @@ body.dark-mode .form-control:focus {
     color: #fff;
     border-color: #28a75f;
 }
+
+/* Contact Form Success Message */
+
+#successMessage {
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
